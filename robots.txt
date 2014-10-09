@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://qtdc1229.github.io/sitemap.xml 
+Sitemap: https://qtdc1229.github.io/sitemap.xml 
