@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gitpress | Dingc Blog]]></title>
   <link href="https://qtdc1229.github.io/blog/categories/gitpress/atom.xml" rel="self"/>
   <link href="https://qtdc1229.github.io/"/>
-  <updated>2014-10-11T15:06:27+08:00</updated>
+  <updated>2014-10-11T15:41:37+08:00</updated>
   <id>https://qtdc1229.github.io/</id>
   <author>
     <name><![CDATA[dingc]]></name>
@@ -121,6 +121,51 @@
 <p>至此你已经基本完成了octopress的部署。</p>
 
 <h3>新添加一篇blog</h3>
+
+<p>Octopress为我们提供了一些task来创建博文和页面。博文必须存储在source/_posts目录下，并且需要按照Jekyll的命名规范对文章进行命名：YYYY-MM-DD-post-title.markdown。文章的名字会被当做url的一部分，而其中的日期用于对博文的区分和排序。</p>
+
+<p>通过Octopress提供的task可以正确的按照命名规范创建一个博文，并且在博文中会附带常用的一些yaml元数据。只需要在终端输入如下命令：</p>
+
+<pre><code>    $ rake new_post["title"]
+</code></pre>
+
+<p>其中title为博文的文件名，创建出来的文件默认是markdown格式。上面的命令会创建出这样一个文件：<code>source/_posts/2014-10-09-title.markdown</code>。</p>
+
+<p>打开这个文件，可以看到里面有如下一些内容了(告诉Jekyll博客引擎如何处理博文和页面)：</p>
+
+<pre><code>    ---
+    layout: post
+    title: "title"
+    date: 2013-08-03 16:36
+    comments: true
+    categories: 
+    ---
+</code></pre>
+
+<p>接着我们就可以在这个文件中写我们的博文啦。完成之后，我们可以预览和部署博文。下面是创建并部署博文的一个完整过程：</p>
+
+<pre><code>    $ rake new_post["New Post"]
+    $ rake generate
+    $ git add .
+    $ git commit -am "Some comment here." 
+    $ git push origin source
+    $ rake deploy
+</code></pre>
+
+<p>参考：<a href="http://octopress.org/docs/blogging/">Start blogging with Octopress</a></p>
+
+<h4>小结</h4>
+
+<p>在这之后还需要做很多，比如评论插件、分享插件的添加，有自己域名了可以把这个再指向自己的域名，还有一些关于自己个性化的配置。在之后慢慢完善吧。</p>
+
+<h4>参考</h4>
+
+<ul>
+<li>1、<a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></li>
+<li>2、<a href="http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/">象写程序一样写博客：搭建基于github的博客</a></li>
+<li>3、<a href="http://octopress.org/docs/">Octopress Documentation</a></li>
+</ul>
+
 ]]></content>
   </entry>
   
