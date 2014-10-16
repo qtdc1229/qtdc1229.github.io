@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gitpress | Dingc Blog]]></title>
   <link href="https://qtdc1229.github.io/blog/categories/gitpress/atom.xml" rel="self"/>
   <link href="https://qtdc1229.github.io/"/>
-  <updated>2014-10-11T15:41:37+08:00</updated>
+  <updated>2014-10-11T16:07:25+08:00</updated>
   <id>https://qtdc1229.github.io/</id>
   <author>
     <name><![CDATA[dingc]]></name>
@@ -154,11 +154,11 @@
 
 <p>参考：<a href="http://octopress.org/docs/blogging/">Start blogging with Octopress</a></p>
 
-<h4>小结</h4>
+<h3>小结</h3>
 
 <p>在这之后还需要做很多，比如评论插件、分享插件的添加，有自己域名了可以把这个再指向自己的域名，还有一些关于自己个性化的配置。在之后慢慢完善吧。</p>
 
-<h4>参考</h4>
+<h3>参考</h3>
 
 <ul>
 <li>1、<a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></li>
