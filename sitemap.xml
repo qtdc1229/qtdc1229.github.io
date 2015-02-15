@@ -3,6 +3,22 @@
   
   
   <url>
+    <loc>https://qtdc1229.github.io/blog/2015/02/16/guan-yu-zhu-shi/</loc>
+    
+    <lastmod>2015-02-16T01:52:59+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://qtdc1229.github.io/blog/2014/12/29/guan-yu-zhu-shi/</loc>
+    
+    <lastmod>2014-12-29T15:29:33+08:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://qtdc1229.github.io/blog/2014/10/09/li-yong-octopressxie-bo-ke-(zai-machuan-jing-da-jian-)/</loc>
     
     <lastmod>2014-10-09T15:29:33+08:00</lastmod>
@@ -13,32 +29,44 @@
   
   <url>
     <loc>https://qtdc1229.github.io/blog/archives/</loc>
-    <lastmod>2014-10-11T16:07:25+08:00</lastmod>
+    <lastmod>2015-02-16T02:27:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://qtdc1229.github.io/</loc>
-    <lastmod>2014-10-11T16:07:25+08:00</lastmod>
+    <lastmod>2015-02-16T02:27:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>https://qtdc1229.github.io/blog/categories/</loc>
-    <lastmod>2014-10-11T16:07:25+08:00</lastmod>
+    <lastmod>2015-02-16T02:27:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://qtdc1229.github.io/about/</loc>
-    <lastmod>2014-10-11T16:07:25+08:00</lastmod>
+    <lastmod>2015-02-16T02:27:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   
+  
+  <url>
+    <loc>https://qtdc1229.github.io/blog/categories/gitpress/index.html</loc>
+    <lastmod>2014-10-16T14:45:40Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://qtdc1229.github.io/blog/categories/ios/index.html</loc>
+    <lastmod>2015-02-16T02:14:24Z</lastmod>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>

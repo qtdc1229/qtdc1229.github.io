@@ -4,7 +4,7 @@
   <title><![CDATA[Dingc Blog]]></title>
   <link href="https://qtdc1229.github.io/atom.xml" rel="self"/>
   <link href="https://qtdc1229.github.io/"/>
-  <updated>2014-10-11T16:07:25+08:00</updated>
+  <updated>2015-02-16T02:27:50+08:00</updated>
   <id>https://qtdc1229.github.io/</id>
   <author>
     <name><![CDATA[dingc]]></name>
@@ -12,6 +12,162 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[guan-yu-zhu-shi]]></title>
+    <link href="https://qtdc1229.github.io/blog/2015/02/16/guan-yu-zhu-shi/"/>
+    <updated>2015-02-16T01:52:59+08:00</updated>
+    <id>https://qtdc1229.github.io/blog/2015/02/16/guan-yu-zhu-shi</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于注释以及文档]]></title>
+    <link href="https://qtdc1229.github.io/blog/2014/12/29/guan-yu-zhu-shi/"/>
+    <updated>2014-12-29T15:29:33+08:00</updated>
+    <id>https://qtdc1229.github.io/blog/2014/12/29/guan-yu-zhu-shi</id>
+    <content type="html"><![CDATA[<hr />
+
+<h1>关于注释</h1>
+
+<p>作为一个懒人。。。一般注释都不写的。。。其实不写注释也是有原因的：项目太紧。。我记忆力很好。。只有我一个人看。。（这都是借口啊）</p>
+
+<p>最近公司来了一些新人，我这边有两个给人家讲代码的时候就抓瞎了。。回头过来发现自己1-2两年的代码全部都忘掉（其实前几个月的迭代也忘掉了）。。。还得好好看看为啥写了这些。。。
+基于这个问题，查找了一下关于注释以及文档的相关插件程序，收益还是蛮大的。</p>
+
+<h3>VVDocumenter-Xcode</h3>
+
+<p>首先感谢<a href="http://onevcat.com/">onevcat</a>同学的<code>Xcode</code>注释插件<a href="https://github.com/onevcat/VVDocumenter-Xcode">VVDocumenter-Xcode</a>。（其实这个插件我安装了很久了。。。一直懒得使用）</p>
+
+<p>以下是该插件在<code>Xcode</code>中的用法。</p>
+
+<p><img src="https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif" alt="Screenshot" /></p>
+
+<blockquote><p>同样支持<a href="https://developer.apple.com/swift/">Swift</a></p></blockquote>
+
+<p><img src="https://raw.github.com/onevcat/VVDocumenter-Xcode/master/vvdocumenter-swift.gif" alt="Screenshot" /></p>
+
+<p>用法很简单，安装一样很简单，下载程序后编译<code>VVDocumenter-Xcode</code>target即可，程序会自动把插件添加到<code>~/Library/Application Support/Developer/Shared/Xcode/Plug-ins</code>位置。重新启动<code>Xcode</code>后，可以在window菜单中看到’VVDocumenter’的选项，安装完成。看看人家写的插件也是挺有意思的。
+写好注释后就要去生成文档了。</p>
+
+<h3>appledoc</h3>
+
+<p>之前没怎么写过文档。。。要写文档就凌乱了。。。怎么办呢？注释应该可以自动生成文档吧？找个工具？
+google了一下发现了<a href="http://blog.devtang.com/blog/">唐乔的博客</a>中<a href="http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/">使用Objective-C的文档生成工具:appledoc</a>提到了<code>appledoc</code>这个文档生成器，当然是为objectc开发的。
+根据他的描述有三个比较流行的工具：<a href="http://www.stack.nl/~dimitri/doxygen/index.html"><code>doxygen</code></a>，<a href="http://developer.apple.com/opensource/tools/headerdoc.html"><code>headdoc</code></a>和<a href="http://gentlebytes.com/appledoc/"><code>appledoc</code></a>。</p>
+
+<p>我听从了他的选择直接使用了<code>appledoc</code>。以下是<code>appledoc</code>的优点</p>
+
+<blockquote><ul>
+<li><p>它默认生成的文档风格和苹果的官方文档是一致的，而doxygen需要另外配置。</p></li>
+<li><p>appledoc就是用objective-c生成的，必要的时候调试和改动也比较方便。</p></li>
+<li><p>可以生成docset，并且集成到<code>xcode</code>中。这一点是很赞的，相当于在源码中按住option再单击就可以调出相应方法的帮助。</p></li>
+<li><p>appledoc源码在github上，而doxygen在svn上。我个人比较偏激地认为比较活跃的开源项目都应该在github上。</p></li>
+<li><p>相对于headerdoc，它没有特殊的注释要求，可以用<code>/** */</code> 的格式，也可以兼容<code>/*! */</code>的格式的注释，并且生成的注释有汇总页面。</p></li>
+</ul>
+</blockquote>
+
+<p>直接生成docset真的不错哦，不用我去分发多好。<code>appledoc</code>的安装也很简单，在github上下载程序后，在解压目录下执行一下语句：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$sudo sh install-appledoc.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>ok完成安装后，让我们来看看是如何使用的，举一个简单的例子：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$appledoc --project-name MyProject --project-company ibireme ./</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这样直接就可以将编译好的<code>docset</code>放入<code>Xcode</code>的doc目录。</p>
+
+<p>更多使用方法可以使用查询命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$sudo sh install-appledoc.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这这里学到一个小技巧，经常有同学直接用脚本发布包，这里也可以直接用脚本生成文档。</p>
+
+<ol>
+<li>选中你的工程,点击Add Target按钮,选择 Other -> Aggregate模板新建.</li>
+<li>点击Add Build Phase按钮,添加一个Run Script.</li>
+<li>把下面的模板代码复制进去,把前几行参数改成你自己的.</li>
+<li>在Xcode左上角选择这个新建的Target,然后点击build.</li>
+<li>文档就会编译好并且自动安装进Xcode了(重启Xcode生效).</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='AppleScript'><span class='line'><span class="c">#appledoc Xcode script  </span>
+</span><span class='line'><span class="c"># Start constants  </span>
+</span><span class='line'><span class="nv">company</span><span class="o">=</span><span class="s2">&quot;ACME&quot;</span><span class="err">;</span>
+</span><span class='line'><span class="nv">companyID</span><span class="o">=</span><span class="s2">&quot;com.ACME&quot;</span><span class="err">;</span>
+</span><span class='line'><span class="nv">companyURL</span><span class="o">=</span><span class="s2">&quot;http://ACME.com&quot;</span><span class="err">;</span>
+</span><span class='line'><span class="na">target</span><span class="o">=</span><span class="s2">&quot;iphoneos&quot;</span><span class="err">;</span>
+</span><span class='line'><span class="c">#target=&quot;macosx&quot;;</span>
+</span><span class='line'><span class="nv">outputPath</span><span class="o">=</span><span class="s2">&quot;~/help&quot;</span><span class="err">;</span>
+</span><span class='line'><span class="c"># End constants</span>
+</span><span class='line'><span class="o">/</span><span class="nv">usr</span><span class="o">/</span><span class="k">local</span><span class="o">/</span><span class="nv">bin</span><span class="o">/</span><span class="nv">appledoc</span> <span class="err">\</span>
+</span><span class='line'><span class="c">--project-name &quot;${PROJECT_NAME}&quot; \</span>
+</span><span class='line'><span class="c">--project-company &quot;${company}&quot; \</span>
+</span><span class='line'><span class="c">--company-id &quot;${companyID}&quot; \</span>
+</span><span class='line'><span class="c">--docset-atom-filename &quot;${company}.atom&quot; \</span>
+</span><span class='line'><span class="c">--docset-feed-url &quot;${companyURL}/${company}/%DOCSETATOMFILENAME&quot; \</span>
+</span><span class='line'><span class="c">--docset-package-url &quot;${companyURL}/${company}/%DOCSETPACKAGEFILENAME&quot; \</span>
+</span><span class='line'><span class="c">--docset-fallback-url &quot;${companyURL}/${company}&quot; \</span>
+</span><span class='line'><span class="c">--output &quot;${outputPath}&quot; \</span>
+</span><span class='line'><span class="c">--publish-docset \</span>
+</span><span class='line'><span class="c">--docset-platform-family &quot;${target}&quot; \</span>
+</span><span class='line'><span class="c">--logformat xcode \</span>
+</span><span class='line'><span class="c">--keep-intermediate-files \</span>
+</span><span class='line'><span class="c">--no-repeat-first-par \</span>
+</span><span class='line'><span class="c">--no-warn-invalid-crossref \</span>
+</span><span class='line'><span class="c">--exit-threshold 2 \</span>
+</span><span class='line'><span class="s2">&quot;${PROJECT_DIR}&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>小结</h3>
+
+<p>阅读了下<a href="http://onevcat.com/">onevcat</a>同学的代码，学习到不少东西，MacOS的程序没怎么写过，一直想弄一个一键同步kindle的东西，后来以不了了之了。。。还是要勤快点好。。。注释、文档一定要有不能懒了。。</p>
+
+<h3>参考</h3>
+
+<ol>
+<li><a href="http://blog.ibireme.com/2013/08/26/appledoc-guide/">用appledoc生成文档</a></li>
+<li><a href="https://github.com/onevcat/VVDocumenter-Xcode/blob/master/README.md">VVDocumenter-Xcode_Readme</a></li>
+<li><a href="http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/">使用Objective-C的文档生成工具:appledoc</a></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[利用Octopress写博客（在Mac环境搭建）]]></title>
