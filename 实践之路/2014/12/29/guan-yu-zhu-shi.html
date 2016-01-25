@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>关于注释以及文档</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://qtdc1229.github.io/%E5%AE%9E%E8%B7%B5%E4%B9%8B%E8%B7%AF/2014/12/29/guan-yu-zhu-shi.html">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">dingc'enstein</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">关于注释以及文档</h1>
+    <p class="post-meta">Dec 29, 2014</p>
+  </header>
+
+  <article class="post-content">
+    <hr />
+<p>#关于注释</p>
+
+<p>作为一个懒人。。。一般注释都不写的。。。其实不写注释也是有原因的：项目太紧。。我记忆力很好。。只有我一个人看。。（这都是借口啊）</p>
+
+<p>最近公司来了一些新人，我这边有两个给人家讲代码的时候就抓瞎了。。回头过来发现自己1-2两年的代码全部都忘掉（其实前几个月的迭代也忘掉了）。。。还得好好看看为啥写了这些。。。
+基于这个问题，查找了一下关于注释以及文档的相关插件程序，收益还是蛮大的。</p>
+
+<h3 id="vvdocumenter-xcode">VVDocumenter-Xcode</h3>
+
+<p>首先感谢<a href="http://onevcat.com/">onevcat</a>同学的<code class="highlighter-rouge">Xcode</code>注释插件<a href="https://github.com/onevcat/VVDocumenter-Xcode">VVDocumenter-Xcode</a>。（其实这个插件我安装了很久了。。。一直懒得使用）</p>
+
+<p>以下是该插件在<code class="highlighter-rouge">Xcode</code>中的用法。</p>
+
+<p><img src="https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif" alt="Screenshot" />
+&gt; 同样支持<a href="https://developer.apple.com/swift/">Swift</a></p>
+
+<p><img src="https://raw.github.com/onevcat/VVDocumenter-Xcode/master/vvdocumenter-swift.gif" alt="Screenshot" /></p>
+
+<p>用法很简单，安装一样很简单，下载程序后编译<code class="highlighter-rouge">VVDocumenter-Xcode</code>target即可，程序会自动把插件添加到<code class="highlighter-rouge">~/Library/Application Support/Developer/Shared/Xcode/Plug-ins</code>位置。重新启动<code class="highlighter-rouge">Xcode</code>后，可以在window菜单中看到’VVDocumenter’的选项，安装完成。看看人家写的插件也是挺有意思的。
+写好注释后就要去生成文档了。
+###appledoc</p>
+
+<p>之前没怎么写过文档。。。要写文档就凌乱了。。。怎么办呢？注释应该可以自动生成文档吧？找个工具？
+google了一下发现了<a href="http://blog.devtang.com/blog/">唐乔的博客</a>中<a href="http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/">使用Objective-C的文档生成工具:appledoc</a>提到了<code class="highlighter-rouge">appledoc</code>这个文档生成器，当然是为objectc开发的。
+根据他的描述有三个比较流行的工具：<a href="http://www.stack.nl/~dimitri/doxygen/index.html"><code class="highlighter-rouge">doxygen</code></a>，<a href="http://developer.apple.com/opensource/tools/headerdoc.html"><code class="highlighter-rouge">headdoc</code></a>和<a href="http://gentlebytes.com/appledoc/"><code class="highlighter-rouge">appledoc</code></a>。</p>
+
+<p>我听从了他的选择直接使用了<code class="highlighter-rouge">appledoc</code>。以下是<code class="highlighter-rouge">appledoc</code>的优点</p>
+
+<blockquote>
+  <ul>
+    <li>它默认生成的文档风格和苹果的官方文档是一致的，而doxygen需要另外配置。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>appledoc就是用objective-c生成的，必要的时候调试和改动也比较方便。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>可以生成docset，并且集成到<code class="highlighter-rouge">xcode</code>中。这一点是很赞的，相当于在源码中按住option再单击就可以调出相应方法的帮助。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>appledoc源码在github上，而doxygen在svn上。我个人比较偏激地认为比较活跃的开源项目都应该在github上。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>相对于headerdoc，它没有特殊的注释要求，可以用<code class="highlighter-rouge">/** */</code> 的格式，也可以兼容<code class="highlighter-rouge">/*! */</code>的格式的注释，并且生成的注释有汇总页面。</li>
+  </ul>
+</blockquote>
+
+<p>直接生成docset真的不错哦，不用我去分发多好。<code class="highlighter-rouge">appledoc</code>的安装也很简单，在github上下载程序后，在解压目录下执行一下语句：</p>
+
+<p><code class="highlighter-rouge">
+	$sudo sh install-appledoc.sh
+</code>
+ok完成安装后，让我们来看看是如何使用的，举一个简单的例子：</p>
+
+<p><code class="highlighter-rouge">
+	$appledoc --project-name MyProject --project-company ibireme ./
+</code>
+这样直接就可以将编译好的<code class="highlighter-rouge">docset</code>放入<code class="highlighter-rouge">Xcode</code>的doc目录。</p>
+
+<p>更多使用方法可以使用查询命令：</p>
+
+<p><code class="highlighter-rouge">
+	$sudo sh install-appledoc.sh
+</code></p>
+
+<p>这这里学到一个小技巧，经常有同学直接用脚本发布包，这里也可以直接用脚本生成文档。</p>
+
+<ol>
+  <li>选中你的工程,点击Add Target按钮,选择 Other -&gt; Aggregate模板新建.</li>
+  <li>点击Add Build Phase按钮,添加一个Run Script.</li>
+  <li>把下面的模板代码复制进去,把前几行参数改成你自己的.</li>
+  <li>在Xcode左上角选择这个新建的Target,然后点击build.</li>
+  <li>文档就会编译好并且自动安装进Xcode了(重启Xcode生效).</li>
+</ol>
+
+<p><code class="highlighter-rouge">AppleScript 
+	#appledoc Xcode script  
+	# Start constants  
+	company="ACME";  
+	companyID="com.ACME";
+	companyURL="http://ACME.com";
+	target="iphoneos";
+	#target="macosx";
+	outputPath="~/help";
+	# End constants
+	/usr/local/bin/appledoc \
+	--project-name "${PROJECT_NAME}" \
+	--project-company "${company}" \
+	--company-id "${companyID}" \
+	--docset-atom-filename "${company}.atom" \
+	--docset-feed-url "${companyURL}/${company}/%DOCSETATOMFILENAME" \
+	--docset-package-url "${companyURL}/${company}/%DOCSETPACKAGEFILENAME" \
+	--docset-fallback-url "${companyURL}/${company}" \
+	--output "${outputPath}" \
+	--publish-docset \
+	--docset-platform-family "${target}" \
+	--logformat xcode \
+	--keep-intermediate-files \
+	--no-repeat-first-par \
+	--no-warn-invalid-crossref \
+	--exit-threshold 2 \
+	"${PROJECT_DIR}"
+</code>
+###小结</p>
+
+<p>阅读了下<a href="http://onevcat.com/">onevcat</a>同学的代码，学习到不少东西，MacOS的程序没怎么写过，一直想弄一个一键同步kindle的东西，后来以不了了之了。。。还是要勤快点好。。。注释、文档一定要有不能懒了。。</p>
+
+<h3 id="section">参考</h3>
+<ol>
+  <li><a href="http://blog.ibireme.com/2013/08/26/appledoc-guide/">用appledoc生成文档</a></li>
+  <li><a href="https://github.com/onevcat/VVDocumenter-Xcode/blob/master/README.md">VVDocumenter-Xcode_Readme</a></li>
+  <li><a href="http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/">使用Objective-C的文档生成工具:appledoc</a></li>
+</ol>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">dingc'enstein</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>dingc'enstein</li>
+          <li><a href="mailto:dc328466990@gmail.com">dc328466990@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/dingc">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">dingc</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">jekyllrb</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

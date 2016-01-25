@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dingc&#39;enstein</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>https://qtdc1229.github.io/</link>
+    <atom:link href="https://qtdc1229.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 25 Jan 2016 18:53:29 +0800</pubDate>
+    <lastBuildDate>Mon, 25 Jan 2016 18:53:29 +0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 25 Jan 2016 00:53:13 +0800</pubDate>
+        <link>https://qtdc1229.github.io/jekyll/update/2016/01/25/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://qtdc1229.github.io/jekyll/update/2016/01/25/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>移动开发的专注之路</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;移动开发的专注之路&lt;/h1&gt;
+
+&lt;p&gt;在被测试一而再再而三的打断之后，我对自己工作效率实在是忍无可忍了。怎么样才能快速构建部署提上了日程。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;移动开发的系统集成要做什么？&lt;/h3&gt;
+
+&lt;p&gt;首先我们来看看，为了专注工作我们要做些什么：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1、更好用的bug收集工具（仅仅是人工提交一个问题已经没有办法我们的需求了，客观的stack日志、操作步奏、carshReport以及截图会更加提升效率）&lt;/li&gt;
+  &lt;li&gt;2、提交代码后自动编译（我们现在使用了SVN，整体需要支持SVN，服务器平台需要支持xcode）&lt;/li&gt;
+  &lt;li&gt;3、自动打包&lt;/li&gt;
+  &lt;li&gt;4、快速部署平台（APP需要下载）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;友盟错误统计&lt;/h3&gt;
+
+&lt;p&gt;bug收集工具的重要性这里就不说了大家都知道的，怎么才能更~~搞笑，搞笑。。。手残~~高效收集解决bug是个大问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;友盟&lt;/strong&gt; 是我们最早使用的一个bug统计工具，&lt;strong&gt;友盟&lt;/strong&gt; 只能收集崩溃日志，对于当初啥都不懂的我来说已经很高大上了。&lt;/p&gt;
+
+&lt;p&gt;他的优点。。。在现在来说只能说出现的太早了。。。当时国外的工具不怎么知道，也没这么多人普及。。。
+他的缺点收集到的崩溃日志没符号表没法看。。。不够友好。。。只能收集&lt;strong&gt;CrashReport&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;bughd&quot;&gt;BugHD&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;BugHD&lt;/code&gt;是&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;推出的一款bug收集工具，其实他也就是&lt;strong&gt;友盟&lt;/strong&gt;的扩展版。功能比较单一依然是只收集&lt;strong&gt;CrashReport&lt;/strong&gt;，而且出现过一个非常不友好的事件–2015年9月前后所有安装&lt;code class=&quot;highlighter-rouge&quot;&gt;BugHD&lt;/code&gt;的应用全部遭到提交失败，理由是会跳到第三方下载。。。然后被大面积的删除。&lt;/p&gt;
+
+&lt;p&gt;生不逢时也是&lt;code class=&quot;highlighter-rouge&quot;&gt;BugHD&lt;/code&gt;比较悲剧的地方，因为同一时期我们发现了另一个bug收集工具 — &lt;strong&gt;bugtags&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;bugtags&quot;&gt;bugtags&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bugtags&lt;/code&gt;是我们最新发现的一款测试软件，也是我们现在一直在使用的。&lt;/p&gt;
+
+&lt;p&gt;他的优势在于测试人员能快速的提交有问题的页面到服务端，然后系统会自动发邮件给应用管理者，开发人员就会对该bug做出相应的措施了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/Simulator%20Screen%20Shot%202016%E5%B9%B41%E6%9C%8821%E6%97%A5%20%E4%B8%8B%E5%8D%884.01.10.png?raw=true&quot; alt=&quot;提交bug界面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;bug提交后后台显示&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/B6BAE36A-8C4B-4D60-AFB0-889B0C623CDE.png?raw=true&quot; alt=&quot;后台显示&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;崩溃抛出问题也更好解决了，抛出的时候&lt;code class=&quot;highlighter-rouge&quot;&gt;bugtags&lt;/code&gt;自动做了屏幕截图，并且将图以及&lt;strong&gt;CrashReport&lt;/strong&gt;一同提交到了后台。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/QQ20160121-0.png?raw=true&quot; alt=&quot;崩溃信息&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击堆栈信息后会有堆栈的详细信息。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/QQ20160121-stackinfo.png?raw=true&quot; alt=&quot;堆栈信息&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最近&lt;code class=&quot;highlighter-rouge&quot;&gt;bugtags&lt;/code&gt;推出了他们的网页版，有兴趣可以试试。&lt;/p&gt;
+
+&lt;h3 id=&quot;firim&quot;&gt;fir.im&lt;/h3&gt;
+
+&lt;p&gt;找到了合适的bug收集工具我们算是能闲一闲了，但是面对一大堆机器让你安装APP的机器，你的内心估计是崩溃的。。。找到一个合适的APP仓库是需要提上日程了。&lt;/p&gt;
+
+&lt;p&gt;我们要做的很简单，就是将有Develop证书的APP发布到服务器上，能供测试人员下载。这个服务器必须支持https，而且我们还得顺利的搞到测试设备的UDID，大致就是这样。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;是最先出现在我的眼中的。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;给出的方案是这样的：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1、首先是收集UDID，先访问&lt;a href=&quot;http://fir.im/udid&quot;&gt;http://fir.im/udid&lt;/a&gt;选择发送udid发送到指定邮箱，然后开发者一条一条添加到apple的设备后台里去。。。（有没有更好的办法。。。。自己写个程序？）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/IMG_0436.PNG?raw=true&quot; alt=&quot;udid&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2、在&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;后台建立APP，上传APP到后台&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/QQ20160121-firimapp.png?raw=true&quot; alt=&quot;fir.im后台&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;3、&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;给你一个短链接，这个短链接你可以任意修改最后的后缀，确定以后依然可以修改，然后你将该短链接发送给测试人员。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/QQ20160121-563b22a400fc74087200000e.png?raw=true&quot; alt=&quot;fir.im云掌柜&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4、测试设备访问短链接下载APP，和下载企业发布应用是一样的&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/QQ20160121-dmiotinn.png?raw=true&quot; alt=&quot;dmiotinn&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最初我只是把他当作企业发布的仓库，作为一个囊中羞涩的小公司，一个CA高级认证的https证书也是需要节省的…&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;给我们解决了https的证书问题，在全国范围内下载成功了比我们自己放在高的多。再后来发现用他的测试发布平台是非常好用的，当然 &lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt; 本身就是作为测试平台去做的，现在来看也是国内做的最好的测试分发平台。&lt;/p&gt;
+
+&lt;p&gt;后来我拥有了全公司iOS设备的UDID，这个过程。。。实在是不想提起。。。好吧那我们就把测试版本也发布到&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;上去吧，不用一个设备一个设备的安装了。&lt;/p&gt;
+
+&lt;h3 id=&quot;testflight&quot;&gt;TestFlight&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TestFlight&lt;/code&gt; 是国外一个比较优秀的测试平台，后来被苹果收购了，所以现在只支持iOS平台。&lt;/p&gt;
+
+&lt;p&gt;作为苹果自己的东西自然有他的过人之处————那就是不用统计udid，但是相对应的需要你的iCloud账号。&lt;/p&gt;
+
+&lt;p&gt;过程大致如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在iTunes-connects中设置&lt;code class=&quot;highlighter-rouge&quot;&gt;TestFlight&lt;/code&gt;，加入要发布的构建。&lt;/li&gt;
+  &lt;li&gt;在该APP中加入测试人员的iCloud的账号&lt;/li&gt;
+  &lt;li&gt;测试人员下载&lt;code class=&quot;highlighter-rouge&quot;&gt;TestFlight&lt;/code&gt;应用&lt;/li&gt;
+  &lt;li&gt;然后在应用中登录，下载测试APP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上过程全部脑补。&lt;strong&gt;&lt;a href=&quot;https://github.com/wensonMaster&quot;&gt;wency&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;travis-ci&quot;&gt;Travis CI&lt;/h3&gt;
+
+&lt;p&gt;完成了bug管理，打包发布怎么才能将编译和以上步骤一起自动发布呢？在阅读Bolg的时候我不经意间了解到了系统集成。&lt;/p&gt;
+
+&lt;p&gt;第一次看到&lt;code class=&quot;highlighter-rouge&quot;&gt;Travis CI&lt;/code&gt;是在&lt;strong&gt;&lt;a href=&quot;http://objccn.io/&quot;&gt;objccn.io&lt;/a&gt;&lt;/strong&gt;上这是一个关于Objective-C的进阶的网站。其中第六章有一篇&lt;strong&gt;&lt;a href=&quot;http://objccn.io/issue-6-5/&quot;&gt;为 iOS 建立 Travis CI&lt;/a&gt;&lt;/strong&gt;的文章。阅读了他才对为&lt;code class=&quot;highlighter-rouge&quot;&gt;Travis CI&lt;/code&gt;有一点了解。&lt;/p&gt;
+
+&lt;p&gt;首先是CI，持续集成（Continuous integration）
+&amp;gt;持续集成是一种软件开发实践，即团队开发成员经常集成它们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Travis CI&lt;/code&gt;被广泛的用在github上，如果你想在自己的服务器上部署一份，对不起这不被允许。。。即使是企业版也是要他们合作，整个持续集成的过程将在&lt;code class=&quot;highlighter-rouge&quot;&gt;Travis CI&lt;/code&gt;的服务器上执行。可以说他们出售的是个在线的服务。&lt;/p&gt;
+
+&lt;p&gt;如果你的是一个开源项目，或者你愿意的持续集成服务不再自己的服务器上运行，那&lt;code class=&quot;highlighter-rouge&quot;&gt;Travis CI&lt;/code&gt;绝对是你不二的选择。&lt;/p&gt;
+
+&lt;p&gt;企业级的他还要收费的。。。我只能选择其他路径了。&lt;/p&gt;
+
+&lt;h3 id=&quot;jenkins&quot;&gt;Jenkins&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Jenkins&lt;/code&gt;也是一款经典的持续集成软件。&lt;/p&gt;
+
+&lt;p&gt;他可以安装在自己的服务器上，这个比较和我的胃口。&lt;/p&gt;
+
+&lt;p&gt;这里先说一下之CI主机必须满足2个要求：速度快与容量大。所以&lt;code class=&quot;highlighter-rouge&quot;&gt;Travis CI&lt;/code&gt;能提供这样的服务，与他强大的服务器组是分不开的。首先我想到的是部署在咱们的公司服务器上，但是很快就发现，这是一个无法完成的动作。。。为什么？CentOS怎么运行XCode 的 commodline ?&lt;/p&gt;
+
+&lt;p&gt;好吧既然这样就先部署在我的电脑上好了，至少保证他能运行。&lt;/p&gt;
+
+&lt;p&gt;简单介绍一下&lt;code class=&quot;highlighter-rouge&quot;&gt;Jenkins&lt;/code&gt;的安装，首先保证有Java环境，如果没有安装一个JDK最新版的好了。然后在Terminal中键入以下代码：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+$ brew install jenkins
+&lt;/code&gt;
+没有安装过brew的自行脑补。
+安装完成后键入&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+$ java -jar */jenkins.war
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后在浏览器中键入&lt;a href=&quot;http://localhost:8080/&quot;&gt;http://localhost:8080/&lt;/a&gt;，可以看到&lt;code class=&quot;highlighter-rouge&quot;&gt;Jenkins&lt;/code&gt;的主界面&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/QQ20160121-Jenkins.png?raw=true&quot; alt=&quot;Jenkins主界面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击新建然后选择自由风格的软件项目&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/B9F00738-67AC-4BC1-A771-C99666E076C9.png?raw=true&quot; alt=&quot;Jenkins新建&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ok后会进入配置页面&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/8CF5649F-696F-4FDF-8750-C8F839628DAD.png?raw=true&quot; alt=&quot;Jenkins项目配置&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里说明一下，Jenkins跟大部分应用一样有大量的插件，比如在图中看到我们看到svn账号管理这个插件就是&lt;strong&gt;Credentials Plugin&lt;/strong&gt;，如果要运行iOS就要安装相应的iOS编译相关的XCode比如&lt;strong&gt;CocoaPods Jenkins Integration&lt;/strong&gt;、&lt;strong&gt;Xcode integration&lt;/strong&gt;、&lt;strong&gt;Keychains and Provisioning Profiles Management&lt;/strong&gt;等。以上3个插件加上&lt;strong&gt;fir-plugin&lt;/strong&gt;是我们必要的，你可以根据不同的构建选择不同的插件。&lt;/p&gt;
+
+&lt;p&gt;这个iOS构建我添加了&lt;strong&gt;Xcode integration&lt;/strong&gt;，用于控制iOS的编译&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/B01794F7-1803-433F-97D7-FC355ECFA4A9.png?raw=true&quot; alt=&quot;Jenkins iOS设置1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/B0BF8F87-6419-4ACE-989B-BDC1CDCD205B.png?raw=true&quot; alt=&quot;Jenkins iOS设置2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里大部分的数据都在环境变量选项已经设置过了，简单贴一下环境变量的设置：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/18220E3E-16CF-43BE-A531-82E776798120.png?raw=true&quot; alt=&quot;Jenkins 环境变量设置&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里注意按照自己的路径设置，相对来说设置还是比较简单的。&lt;/p&gt;
+
+&lt;p&gt;比较麻烦的是关于keychain的设置，&lt;strong&gt;Keychains and Provisioning Profiles Management&lt;/strong&gt;插件是必要的，安装完之后我们就可以继续设置工程了。&lt;/p&gt;
+
+&lt;p&gt;首先要在钥匙串中导出keychain，然后在&lt;code class=&quot;highlighter-rouge&quot;&gt;Jenkins&lt;/code&gt;的系统管理中找到&lt;strong&gt;Keychains and Provisioning Profiles Management&lt;/strong&gt;选项。在这里选择上传文件上传keychain，然后点击添加证书填入要选择的签名证书名称。然后填写&lt;strong&gt;Provisioning Profiles&lt;/strong&gt;文件的名称以及&lt;strong&gt;UUID&lt;/strong&gt;这里path可以设置为系统默认的path一般xcode会把预编译文件存放在这个目录下。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/D22F6C20-ACCB-44CF-8315-0289A2C7EBB6.png?raw=true&quot; alt=&quot;Jenkins Manage Keychain and Provisioning Profile files&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在系统管理中设置完keychain后就可在任务的设置中继续设置了。添加keychain然后在keychain选项可以选择你刚才设置的keychain，然后选择需要的&lt;strong&gt;Code Signing Identity&lt;/strong&gt;，&lt;strong&gt;Provisioning Profiles&lt;/strong&gt;也是同理勾选&lt;strong&gt;Mobile Provisioning Profiles&lt;/strong&gt;后然后设置。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/70E28929-C858-4336-BC01-1882B3728039.png?raw=true&quot; alt=&quot;Jenkins Keychains and Code Signing Identities&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ok，到此为止就可以进行构建了。&lt;/p&gt;
+
+&lt;p&gt;我在自己构建的时候遇到了一种情况，打包的时候失败了，构建日志告诉我&lt;strong&gt;CODE_SIGN_RESOURCE_RULES_PATH&lt;/strong&gt;没有设置，这个是在.xcodeproj文件中buildSetting里设置的，但是提交appstore的是不需要&lt;strong&gt;CODE_SIGN_RESOURCE_RULES&lt;/strong&gt;，如果遇到这种情况记得设置。&lt;/p&gt;
+
+&lt;p&gt;最后在&lt;code class=&quot;highlighter-rouge&quot;&gt;fir.im&lt;/code&gt;的官网下载插件，填写&lt;strong&gt;API Token&lt;/strong&gt;和包地址，上传到fir即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/qtdc1229/tutorial/blob/newbranch/resources/9AD8E605-0FAA-4B46-A095-B6B29193734D.png?raw=true&quot; alt=&quot;Jenkins fir.im&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如何自动化？这里有多种形式，设置都在&lt;strong&gt;构建触发器&lt;/strong&gt;模块中
+* 触发远程构建 (例如,使用脚本)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;添加svn的hock文件，每次提交时根据我们的关键字会自动构建。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择&lt;strong&gt;Poll SCM&lt;/strong&gt;然后填写自己定义的日程。规则如下：&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MINUTE HOUR DOM MONTH DOW&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MINUTE 一小时内多少分钟（0-59）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;HOUR    一天内多少小时（0-23小时）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;DOM     一个月内多少天（1-31）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MONTH  每月（1-12）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;DOW     星期几（0-7），其中0和7都表示周日。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如果要指定一个字段允许多个值，就按下面提供的操作步骤(指定)。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;优先顺序如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘*’                       可用来指定所有有效的值。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘M-N’                   可以用来指定一个范围,比如“1-5”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘M-N/X’或’&lt;em&gt;/X’      可用于在指定范围内跳跃一个X的值，比如在MINUTE字段中”&lt;/em&gt;/15”表示”0,15,30,45”，”1-6/2”表示”1,3,5”。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘A,B,…,Z’            可以用来指定多个值，比如“0,30”或“1,3,5”。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;任何空白行和’#’开始的行都将表示为注释而不予理睬。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;此外，’‘@yearly’, ‘@annually’, ‘@monthly’, ‘@weekly’, ‘@daily’, ‘@midnight’,  ‘@hourly’都是支持的 。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;举例说明：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;＃每分钟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+* * * * *
+&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;＃每一小时后第5分钟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+5 * * * *
+&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;小结&lt;/h3&gt;
+
+&lt;p&gt;公司比较小，之前也很有程序构建上的经验,不过这是一个机会能够一步一步去实践，完成从无到有，从有到强的过程。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;参考&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://kkbox.codes/archives/2015/07/03/kkbox-ios-jenkins/&quot;&gt;KKBOX iOS 開發過程中使用的 Jenkins 環境&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.built.io/blog/2014/10/how-to-set-up-customized-jenkins-for-ios/&quot;&gt;How to Set Up Customized Jenkins for iOS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/ilyzj/article/details/8123150&quot;&gt;Hudson poll scm 时间格式说明&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://rannie.github.io/ios/2014/12/29/xcodebuild-jenkins-ci.html&quot;&gt;使用 Xcodebuild + Jenkins + Apache 做 iOS 持续集成&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 15:29:33 +0800</pubDate>
+        <link>https://qtdc1229.github.io/%E5%AE%9E%E8%B7%B5%E4%B9%8B%E8%B7%AF/2016/01/20/zhuan-zhu-yi-dong-kai-fa-zhi-lu.html</link>
+        <guid isPermaLink="true">https://qtdc1229.github.io/%E5%AE%9E%E8%B7%B5%E4%B9%8B%E8%B7%AF/2016/01/20/zhuan-zhu-yi-dong-kai-fa-zhi-lu.html</guid>
+        
+        
+        <category>实践之路</category>
+        
+      </item>
+    
+      <item>
+        <title>关于注释以及文档</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;#关于注释&lt;/p&gt;
+
+&lt;p&gt;作为一个懒人。。。一般注释都不写的。。。其实不写注释也是有原因的：项目太紧。。我记忆力很好。。只有我一个人看。。（这都是借口啊）&lt;/p&gt;
+
+&lt;p&gt;最近公司来了一些新人，我这边有两个给人家讲代码的时候就抓瞎了。。回头过来发现自己1-2两年的代码全部都忘掉（其实前几个月的迭代也忘掉了）。。。还得好好看看为啥写了这些。。。
+基于这个问题，查找了一下关于注释以及文档的相关插件程序，收益还是蛮大的。&lt;/p&gt;
+
+&lt;h3 id=&quot;vvdocumenter-xcode&quot;&gt;VVDocumenter-Xcode&lt;/h3&gt;
+
+&lt;p&gt;首先感谢&lt;a href=&quot;http://onevcat.com/&quot;&gt;onevcat&lt;/a&gt;同学的&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode&lt;/code&gt;注释插件&lt;a href=&quot;https://github.com/onevcat/VVDocumenter-Xcode&quot;&gt;VVDocumenter-Xcode&lt;/a&gt;。（其实这个插件我安装了很久了。。。一直懒得使用）&lt;/p&gt;
+
+&lt;p&gt;以下是该插件在&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode&lt;/code&gt;中的用法。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.github.com/onevcat/VVDocumenter-Xcode/master/ScreenShot.gif&quot; alt=&quot;Screenshot&quot; /&gt;
+&amp;gt; 同样支持&lt;a href=&quot;https://developer.apple.com/swift/&quot;&gt;Swift&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.github.com/onevcat/VVDocumenter-Xcode/master/vvdocumenter-swift.gif&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用法很简单，安装一样很简单，下载程序后编译&lt;code class=&quot;highlighter-rouge&quot;&gt;VVDocumenter-Xcode&lt;/code&gt;target即可，程序会自动把插件添加到&lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/Developer/Shared/Xcode/Plug-ins&lt;/code&gt;位置。重新启动&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode&lt;/code&gt;后，可以在window菜单中看到’VVDocumenter’的选项，安装完成。看看人家写的插件也是挺有意思的。
+写好注释后就要去生成文档了。
+###appledoc&lt;/p&gt;
+
+&lt;p&gt;之前没怎么写过文档。。。要写文档就凌乱了。。。怎么办呢？注释应该可以自动生成文档吧？找个工具？
+google了一下发现了&lt;a href=&quot;http://blog.devtang.com/blog/&quot;&gt;唐乔的博客&lt;/a&gt;中&lt;a href=&quot;http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/&quot;&gt;使用Objective-C的文档生成工具:appledoc&lt;/a&gt;提到了&lt;code class=&quot;highlighter-rouge&quot;&gt;appledoc&lt;/code&gt;这个文档生成器，当然是为objectc开发的。
+根据他的描述有三个比较流行的工具：&lt;a href=&quot;http://www.stack.nl/~dimitri/doxygen/index.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;doxygen&lt;/code&gt;&lt;/a&gt;，&lt;a href=&quot;http://developer.apple.com/opensource/tools/headerdoc.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;headdoc&lt;/code&gt;&lt;/a&gt;和&lt;a href=&quot;http://gentlebytes.com/appledoc/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;appledoc&lt;/code&gt;&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;我听从了他的选择直接使用了&lt;code class=&quot;highlighter-rouge&quot;&gt;appledoc&lt;/code&gt;。以下是&lt;code class=&quot;highlighter-rouge&quot;&gt;appledoc&lt;/code&gt;的优点&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;它默认生成的文档风格和苹果的官方文档是一致的，而doxygen需要另外配置。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;appledoc就是用objective-c生成的，必要的时候调试和改动也比较方便。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;可以生成docset，并且集成到&lt;code class=&quot;highlighter-rouge&quot;&gt;xcode&lt;/code&gt;中。这一点是很赞的，相当于在源码中按住option再单击就可以调出相应方法的帮助。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;appledoc源码在github上，而doxygen在svn上。我个人比较偏激地认为比较活跃的开源项目都应该在github上。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;相对于headerdoc，它没有特殊的注释要求，可以用&lt;code class=&quot;highlighter-rouge&quot;&gt;/** */&lt;/code&gt; 的格式，也可以兼容&lt;code class=&quot;highlighter-rouge&quot;&gt;/*! */&lt;/code&gt;的格式的注释，并且生成的注释有汇总页面。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;直接生成docset真的不错哦，不用我去分发多好。&lt;code class=&quot;highlighter-rouge&quot;&gt;appledoc&lt;/code&gt;的安装也很简单，在github上下载程序后，在解压目录下执行一下语句：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$sudo sh install-appledoc.sh
+&lt;/code&gt;
+ok完成安装后，让我们来看看是如何使用的，举一个简单的例子：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$appledoc --project-name MyProject --project-company ibireme ./
+&lt;/code&gt;
+这样直接就可以将编译好的&lt;code class=&quot;highlighter-rouge&quot;&gt;docset&lt;/code&gt;放入&lt;code class=&quot;highlighter-rouge&quot;&gt;Xcode&lt;/code&gt;的doc目录。&lt;/p&gt;
+
+&lt;p&gt;更多使用方法可以使用查询命令：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$sudo sh install-appledoc.sh
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;这这里学到一个小技巧，经常有同学直接用脚本发布包，这里也可以直接用脚本生成文档。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;选中你的工程,点击Add Target按钮,选择 Other -&amp;gt; Aggregate模板新建.&lt;/li&gt;
+  &lt;li&gt;点击Add Build Phase按钮,添加一个Run Script.&lt;/li&gt;
+  &lt;li&gt;把下面的模板代码复制进去,把前几行参数改成你自己的.&lt;/li&gt;
+  &lt;li&gt;在Xcode左上角选择这个新建的Target,然后点击build.&lt;/li&gt;
+  &lt;li&gt;文档就会编译好并且自动安装进Xcode了(重启Xcode生效).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AppleScript 
+	#appledoc Xcode script  
+	# Start constants  
+	company=&quot;ACME&quot;;  
+	companyID=&quot;com.ACME&quot;;
+	companyURL=&quot;http://ACME.com&quot;;
+	target=&quot;iphoneos&quot;;
+	#target=&quot;macosx&quot;;
+	outputPath=&quot;~/help&quot;;
+	# End constants
+	/usr/local/bin/appledoc \
+	--project-name &quot;${PROJECT_NAME}&quot; \
+	--project-company &quot;${company}&quot; \
+	--company-id &quot;${companyID}&quot; \
+	--docset-atom-filename &quot;${company}.atom&quot; \
+	--docset-feed-url &quot;${companyURL}/${company}/%DOCSETATOMFILENAME&quot; \
+	--docset-package-url &quot;${companyURL}/${company}/%DOCSETPACKAGEFILENAME&quot; \
+	--docset-fallback-url &quot;${companyURL}/${company}&quot; \
+	--output &quot;${outputPath}&quot; \
+	--publish-docset \
+	--docset-platform-family &quot;${target}&quot; \
+	--logformat xcode \
+	--keep-intermediate-files \
+	--no-repeat-first-par \
+	--no-warn-invalid-crossref \
+	--exit-threshold 2 \
+	&quot;${PROJECT_DIR}&quot;
+&lt;/code&gt;
+###小结&lt;/p&gt;
+
+&lt;p&gt;阅读了下&lt;a href=&quot;http://onevcat.com/&quot;&gt;onevcat&lt;/a&gt;同学的代码，学习到不少东西，MacOS的程序没怎么写过，一直想弄一个一键同步kindle的东西，后来以不了了之了。。。还是要勤快点好。。。注释、文档一定要有不能懒了。。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;参考&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.ibireme.com/2013/08/26/appledoc-guide/&quot;&gt;用appledoc生成文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/onevcat/VVDocumenter-Xcode/blob/master/README.md&quot;&gt;VVDocumenter-Xcode_Readme&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.devtang.com/blog/2012/02/01/use-appledoc-to-generate-xcode-doc/&quot;&gt;使用Objective-C的文档生成工具:appledoc&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Mon, 29 Dec 2014 15:29:33 +0800</pubDate>
+        <link>https://qtdc1229.github.io/%E5%AE%9E%E8%B7%B5%E4%B9%8B%E8%B7%AF/2014/12/29/guan-yu-zhu-shi.html</link>
+        <guid isPermaLink="true">https://qtdc1229.github.io/%E5%AE%9E%E8%B7%B5%E4%B9%8B%E8%B7%AF/2014/12/29/guan-yu-zhu-shi.html</guid>
+        
+        
+        <category>实践之路</category>
+        
+      </item>
+    
+      <item>
+        <title>利用Octopress写博客（在Mac环境搭建）</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://beyondvincent.com/images/2013/08/github_page_and-octopress.png&quot; alt=&quot;github + octopress&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;gitpress&quot;&gt;你好，gitpress&lt;/h1&gt;
+
+&lt;p&gt;大家好，这是我的第一篇blog，写些什么呢，就记录下怎么建立这个小blog的过程吧，权当大家参考。&lt;/p&gt;
+
+&lt;h3 id=&quot;blog&quot;&gt;为什么搭建这个blog&lt;/h3&gt;
+
+&lt;p&gt;作为一个iOS开发者，互联网穿梭歌者，阅读各种文章必不可少，在这中间发现了&lt;a href=&quot;http://beyondvincent.com/&quot;&gt;破船之家&lt;/a&gt;、&lt;a href=&quot;http://onevcat.com/&quot;&gt;OneV’s Den&lt;/a&gt;、&lt;a href=&quot;http://blog.devtang.com/&quot;&gt;唐巧的技术博客&lt;/a&gt;这些优秀的iOS开发博客，在这当中发现这些博客几乎都是使用了Octopress这个framwork搭建的。Octopress本身是基于Jekyll的，而jekyll这个开源的blog软件是&lt;a href=&quot;http://en.wikipedia.org/wiki/Tom_Preston-Werner&quot;&gt;Tom Preston-Werner&lt;/a&gt;用ruby完成的(wiki了一下这哥们原来是github的CEO，果然很NB)。什么样的blog软件值得这么多人风靡呢？基于这个疑问我只好hacker一把，尝试的完成了这个blog的搭建。&lt;/p&gt;
+
+&lt;p&gt;这个blog是搭建在github上的这个就不多说了，github已经成为coder界最神奇最风靡的一个异次元空间。Octopress因为基于jekyll所以对github支持非常优秀。搭建这个blog可以促进git的学习使用，同时markdown的书写习惯也可以多多练习。markdown编辑器是&lt;a href=&quot;http://mouapp.com/&quot;&gt;Mou&lt;/a&gt;,书写方法参考了&lt;a href=&quot;https://www.zybuluo.com/mdeditor&quot;&gt;cmd在线编辑&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;ruby--bundle--octopress-&quot;&gt;ruby + bundle + Octopress 的安装&lt;/h3&gt;
+
+&lt;p&gt;整个安装过程可以参考官方文档 http://octopress.org/docs/setup/ 这里大概说说，自己遇到的问题也说一下。&lt;/p&gt;
+
+&lt;p&gt;mac系统本身是带有&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;的，这里可以确认下&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;的版本：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ ruby --version //确认 ruby的版本
+&lt;/code&gt;
+如果小于1.9.3或者没有安装需要先安装&lt;code class=&quot;highlighter-rouge&quot;&gt;RVM&lt;/code&gt;，然后安装&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ curl -L https://get.rvm.io | bash -s stable --ruby ruby的版本
+	$ rvm install 1.9.3
+	$ rvm use 1.9.3
+	$ rvm rubygems latest
+&lt;/code&gt;
+然后再使用&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby --version&lt;/code&gt;确认&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;是否已经安装。
+参考：&lt;a href=&quot;http://octopress.org/docs/setup/rvm/&quot;&gt;Installing Ruby With RVM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在安装Octopress之前，请确保你的电脑上已经安装有&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;了，在终端输入&lt;code class=&quot;highlighter-rouge&quot;&gt;git --version&lt;/code&gt;，应该可以看到电脑中的&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;版本，如果没有显示相关内容，请先安装&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;安装之后，利用&lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;命令将&lt;code class=&quot;highlighter-rouge&quot;&gt;octopress&lt;/code&gt;从&lt;code class=&quot;highlighter-rouge&quot;&gt;github&lt;/code&gt;上clone到本机&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ git clone git://github.com/imathis/octopress.git octopress
+	$ cd octopress    # If you use RVM, You&#39;ll be asked if you trust the .rvmrc file (say yes).
+&lt;/code&gt;
+接着安装相关依赖项：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ gem install bundler
+	$ rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+	$ bundle install
+&lt;/code&gt;
+* 这里使用&lt;code class=&quot;highlighter-rouge&quot;&gt;gem&lt;/code&gt;的时候注意，由于&lt;code class=&quot;highlighter-rouge&quot;&gt;gem&lt;/code&gt;默认的包是来源于Amazon的服务器所以很大的可能会被GFW阻挡，因此可以将&lt;code class=&quot;highlighter-rouge&quot;&gt;gem&lt;/code&gt;的源转移到淘宝的&lt;a href=&quot;https://ruby.taobao.org/&quot;&gt;RubyGems&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;最后安装默认的Octopress 主题。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ rake install
+&lt;/code&gt;
+参考： &lt;a href=&quot;http://octopress.org/docs/setup/&quot;&gt;Octopress Setup&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;octopress&quot;&gt;配置Octopress&lt;/h3&gt;
+
+&lt;p&gt;Octopress主要有三种部署模式：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1、部署在GitHub Pages。&lt;a href=&quot;http://octopress.org/docs/deploying/github&quot;&gt;Deploying to GitHub Pages »&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;2、部署在Heroku。&lt;a href=&quot;http://octopress.org/docs/deploying/heroku&quot;&gt;Deploying to Heroku »&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;3、部署在自己的服务器。（Rsync模式）&lt;a href=&quot;http://octopress.org/docs/deploying/rsync&quot;&gt;Deploying with Rsync »&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这里主要说在github的部署，其余请查阅对应链接。&lt;/p&gt;
+
+&lt;p&gt;Octopress的作者已经尽量让配置简化了。大多数情况下只需要配置&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Rakefile&lt;/code&gt;文件即可。其中Rakefile是跟博客部署相关，一般情况下并不需要修改这个文件，除非使用了rsync。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;config.yml&lt;/code&gt;是博客重要的一个配置文件，在config.yml文件中有三大配置项：&lt;code class=&quot;highlighter-rouge&quot;&gt;Main Configs&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll &amp;amp; Plugins&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;3rd Party Settings&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;一般，该文件中其中&lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt;是必须要填写的，这里的url是在github上创建的一个仓库地址，具体请看第四步中创建的地址。另外再修改一下&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;subtitle&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt;，根据需求，在开启一些第三方组件服务。&lt;/p&gt;
+
+&lt;p&gt;关于&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;文件中的更多内容，请看这里的内容：&lt;a href=&quot;http://octopress.org/docs/configuring/&quot;&gt;Configuring Octopress&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;octopressgithub-pages&quot;&gt;将Octopress部署到GitHub Pages上&lt;/h3&gt;
+
+&lt;p&gt;首先需要在github上申请一个免费账号，然后&lt;a href=&quot;https://github.com/new&quot;&gt;创建一个资源库&lt;/a&gt;资源库需要命名为：&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.com&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;organization.github.com&lt;/code&gt;，这个地址就是配置完毕后我们访问blog的地址。
+创建好仓库后我们需要利用octopress在rakefile文件中配置好的的task来设置blog。可以先使用下面的命令：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ rake setup_github_pages
+&lt;/code&gt;
+上面的命令会做一些事情(详细介绍看下面给出的参考链接)。其中最主要的就是创建一个_deploy目录，目录用来存放部署到master分支的内容。期间会要求你输入仓库的url，根据提示，进行输入即可。&lt;/p&gt;
+
+&lt;p&gt;完成上面的命令后我们就可以生成blog，然后部署到服务器上了。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ rake generate
+	$ rake deploy
+&lt;/code&gt;
+执行玩&lt;code class=&quot;highlighter-rouge&quot;&gt;deploy&lt;/code&gt;后，就可以访问刚才你申请资源库名称了。&lt;/p&gt;
+
+&lt;p&gt;至此你已经基本完成了octopress的部署。&lt;/p&gt;
+
+&lt;h3 id=&quot;blog-1&quot;&gt;新添加一篇blog&lt;/h3&gt;
+
+&lt;p&gt;Octopress为我们提供了一些task来创建博文和页面。博文必须存储在source/_posts目录下，并且需要按照Jekyll的命名规范对文章进行命名：YYYY-MM-DD-post-title.markdown。文章的名字会被当做url的一部分，而其中的日期用于对博文的区分和排序。&lt;/p&gt;
+
+&lt;p&gt;通过Octopress提供的task可以正确的按照命名规范创建一个博文，并且在博文中会附带常用的一些yaml元数据。只需要在终端输入如下命令：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ rake new_post[&quot;title&quot;]
+&lt;/code&gt;
+其中title为博文的文件名，创建出来的文件默认是markdown格式。上面的命令会创建出这样一个文件：&lt;code class=&quot;highlighter-rouge&quot;&gt;source/_posts/2014-10-09-title.markdown&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;打开这个文件，可以看到里面有如下一些内容了(告诉Jekyll博客引擎如何处理博文和页面)：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	---
+	layout: post
+	title: &quot;title&quot;
+	date: 2013-08-03 16:36
+	comments: true
+	categories: 
+	---
+&lt;/code&gt;
+接着我们就可以在这个文件中写我们的博文啦。完成之后，我们可以预览和部署博文。下面是创建并部署博文的一个完整过程：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+	$ rake new_post[&quot;New Post&quot;]
+	$ rake generate
+	$ git add .
+	$ git commit -am &quot;Some comment here.&quot; 
+	$ git push origin source
+	$ rake deploy
+&lt;/code&gt;
+参考：&lt;a href=&quot;http://octopress.org/docs/blogging/&quot;&gt;Start blogging with Octopress&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;小结&lt;/h3&gt;
+&lt;p&gt;在这之后还需要做很多，比如评论插件、分享插件的添加，有自己域名了可以把这个再指向自己的域名，还有一些关于自己个性化的配置。在之后慢慢完善吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;参考&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1、&lt;a href=&quot;http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/&quot;&gt;利用Octopress搭建一个Github博客&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;2、&lt;a href=&quot;http://blog.devtang.com/blog/2012/02/10/setup-blog-based-on-github/&quot;&gt;象写程序一样写博客：搭建基于github的博客&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;3、&lt;a href=&quot;http://octopress.org/docs/&quot;&gt;Octopress Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 09 Oct 2014 15:29:33 +0800</pubDate>
+        <link>https://qtdc1229.github.io/gitpress/2014/10/09/li-yong-octopressxie-bo-ke-(zai-machuan-jing-da-jian-).html</link>
+        <guid isPermaLink="true">https://qtdc1229.github.io/gitpress/2014/10/09/li-yong-octopressxie-bo-ke-(zai-machuan-jing-da-jian-).html</guid>
+        
+        
+        <category>gitpress</category>
+        
+      </item>
+    
+  </channel>
+</rss>
